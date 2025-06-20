@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1</title>
+		<style>
+			form#myform {
+				background:#9cbc2c;
+				border-radius: 10px;
+				padding: 20px;
+				width:400px;
+			}
+			form#myform fieldset {
+				background:#b9cf6a;
+				border-color:#e3ebc3;
+				border-style:solid;
+				border-width: 2px;
+				border-radius: 5px;
+				margin-bottom: 15px;
+			}
+			form#myform legend {
+				color:#384313;
+				font-size: 18px;
+				font-weight: bold;
+				padding-bottom: 5px;
+			}
+			form#myform input[type=submit] {
+				background:#384313;
+				border: none;
+				border-radius: 20px;
+				font: 18px Georgia, "Times New Roman", Times,
+				serif;
+				color:#ffffff;
+				padding: 10px 25px;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<form id="myform">
+			<fieldset>
+				<legend> Personal Details </legend>
+				<p>First name: <input type="text"name="fname" ></p>
+				<p>Last name: <input type="text"name="lname" ></p>
+				<p>Height:<input type="text" name="h"></p>
+				<p>Weight:<input type="text" name="w"></p>
+				<p>Gender:<input type="radio" name="gender" value="male" >Male
+				<input type="radio" name="gender" value="female" >Female</p>
+				<p>Date of birth:<input name="dob" type="date" ></p>
+				<p>Email:<input name="email" type="email" placeholder="example@abcdefgh.cn" required></p>
+				<p>Password:<input type="password" name="password"></p>
+				<p>Phone number: <input type="tel" name="phone" placeholder="E.g. +12345678900" required></p>
+			</fieldset><br />
+			<fieldset>
+				<legend> Delivery address </legend>
+				<p>Address: <textarea name="address" cols=30 rows=8 required></textarea><br><br></p>
+				<p>Country: <select name="country">
+					<option>Choose a country</option>
+					<option value="china">China</option>
+					<option value="france">France</option>
+					<option value="italy">Italy</option>
+					<option value="portugal">Portugal</option>
+				</select></p>
+			</fieldset>
+			<fieldset>
+				<legend> Perferences </legend>
+				<p>Favourite color: <input name="color" type"color"></p>
+				<p>My lucky number: <input type="number" name="num" min=0 max=9></p>
+				<p>If I were a millionaire, I want to own a ______. <br />
+				<input type="checkbox" name="vehicle" value="Volvo">Volvo<br>
+				<input type="checkbox" name="vehicle" value="Porche">Porche<br>
+				<input type="checkbox" name="vehicle" value="Honda">Honda<br>
+				<input type="checkbox" name="vehicle" value="BMW">BMW</p>
+			</fieldset><br />
+			<input type="submit" value="Submit" >
+		</form>
+	</body>
+</html>
